@@ -34,7 +34,7 @@ namespace Alea_iacta_est
                     facciaVis = dado.Next(1, 6);
                     Console.WriteLine($" \n {giocatore1} prema un tasto per tirare il dado");
                     // per fare in modo che il programma aspetti l'input dell'utente per partire
-                    Console.ReadLine();
+                    Console.ReadKey();
                     Console.WriteLine($" \n Il valore che è uscito a {giocatore1} è {facciaVis + 1}");
                 }
                 else
@@ -42,7 +42,7 @@ namespace Alea_iacta_est
                     facciaVis = dado.Next(1, 6);
                     Console.WriteLine($" \n {giocatore2} prema un tasto per tirare il dado");
                     // per fare in modo che il programma aspetti l'input dell'utente per partire
-                    Console.ReadLine();
+                    Console.ReadKey();
                     Console.WriteLine($"\n Il valore che è uscito a {giocatore2} è {facciaVis + 1}");                    
                 }
                 // istruzioni fuori dal ciclo for perché sarebbero rindondanti altrimenti
@@ -108,8 +108,7 @@ namespace Alea_iacta_est
                         Console.WriteLine("=0   0=");
                         Console.SetCursorPosition(centerx - 7, centery + 3);
                         Console.WriteLine("=0   0=");
-                        faccia = facciaVis;
-                        
+                        faccia = facciaVis;                      
 
                     }
                     
